@@ -1,0 +1,81 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white-color);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(128, 128, 128, 0.248);
+}
+.header .logo {
+  color: var(--black-color);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo .icon {
+  font-size: 25px;
+  color: var(--primary-color);
+  transform: translateY(5px);
+}
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    position: absolute;
+    background-color: var(--white-color);
+    height: -moz-max-content;
+    height: max-content;
+    top: -100rem;
+    width: 80%;
+    border-radius: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 2px 4px rgba(128, 128, 128, 0.375);
+    transition: 0.5s ease-in-out;
+  }
+  .header .active-navbar {
+    top: 6rem;
+  }
+  .header .navlists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navlists .navitem {
+    padding: 0.5rem 0;
+  }
+  .header .navlists .navitem .navlink {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navlists .navitem .navlink:hover {
+    color: var(--primary-color);
+  }
+  .header .navlists .btn {
+    margin-top: 1rem;
+  }
+  .header .navlists .btn a {
+    font-weight: 600;
+  }
+  .header .close-navbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--primary-color);
+  }
+  .header .close-navbar:hover {
+    color: var(--secondary-color);
+  }
+}
+.header .toggle-navbar .icon {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+.header .toggle-navbar:hover.icon {
+  color: var(--secondary-color);
+}/*# sourceMappingURL=Navbar.css.map */
