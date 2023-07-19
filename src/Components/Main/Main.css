@@ -1,1 +1,111 @@
-/*# sourceMappingURL=Main.css.map */
+.main {
+  width: 100%;
+}
+.main .sec-title .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--text-color);
+  margin: 1rem 0;
+  z-index: 2;
+}
+.main .sec-title .title::after {
+  position: absolute;
+  content: "";
+  background: var(--primary-color);
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1;
+}
+.main .sec-content {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .sec-content .expedition {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--card-bg);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.54);
+  overflow: hidden;
+}
+.main .sec-content .expedition:hover {
+  background: var(--card-hover);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease-in-out;
+}
+.main .sec-content .expedition .image-div {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .sec-content .expedition .image-div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .sec-content .expedition .image-div:hover img {
+  transform: scale(1.1);
+}
+.main .sec-content .expedition .card-info {
+  padding: 1rem;
+}
+.main .sec-content .expedition .card-info .title {
+  color: var(--black-color);
+  font-size: 1.25rem;
+}
+.main .sec-content .expedition .card-info .location {
+  gap: 0.5rem;
+}
+.main .sec-content .expedition .card-info .location .icon {
+  color: var(--text-color);
+  font-size: 18px;
+}
+.main .sec-content .expedition .card-info .location .name {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+.main .sec-content .expedition .card-info .details {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--grey-text);
+  border-bottom: 1.5px solid var(--grey-text);
+}
+.main .sec-content .expedition .card-info .details .difficulty {
+  color: var(--text-color);
+  max-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.main .sec-content .expedition .card-info .price {
+  font-size: 2rem;
+  color: var(--black-color);
+  font-weight: 600;
+}
+.main .sec-content .expedition .description {
+  font-size: 13.5px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+.main .sec-content .expedition .btn {
+  margin-top: 1rem;
+  color: var(--white-color);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.main .sec-content .expedition .btn .icon {
+  align-self: center;
+  font-size: 18px;
+}/*# sourceMappingURL=Main.css.map */

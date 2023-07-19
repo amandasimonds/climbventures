@@ -2,6 +2,11 @@ import React from 'react';
 import './Home.css';
 import video from '../../Assets/climbingvideo.mp4';
 import { GrLocation } from 'react-icons/gr';
+import { HiFilter } from 'react-icons/hi';
+import { AiOutlineFacebook, AiFillInstagram } from 'react-icons/ai';
+import { FaTripadvisor } from 'react-icons/fa';
+import { BsListTask } from 'react-icons/bs';
+import { TbApps } from 'react-icons/tb';
 
 const Home = () => {
 	return (
@@ -12,7 +17,7 @@ const Home = () => {
 			<div className="home-content container">
 				<div className="text-div">
 					<span className="small-text">Our Packages</span>
-					<h1 className="home-title">Find your expedition</h1>
+					<h1 className="home-title">Find your adventure</h1>
 				</div>
 				<div className="card-div grid">
 					<div className="destination-input">
@@ -39,6 +44,23 @@ const Home = () => {
 						<div className="input flex">
 							<input type="range" min="100" max="1200" />
 						</div>
+					</div>
+
+					<div className="search-options flex">
+						<HiFilter className="icon" />
+						<span>MORE FILTERS</span>
+					</div>
+				</div>
+				<div className="home-footer-icons flex">
+					<div className="right-icons">
+						<AiOutlineFacebook className="icon" />
+						<AiFillInstagram className="icon" />
+						<FaTripadvisor className="icon" />
+						<AiOutlineFacebook className="icon" />
+					</div>
+					<div className="left-icons">
+						<BsListTask className="icon" />
+						<TbApps className="icon" />
 					</div>
 				</div>
 			</div>

@@ -15,7 +15,7 @@ body {
 }
 
 :root {
-	--primary-color: #7299b5;
+	--primary-color: #289255;
 	--secondary-color: #935036;
 	--gradient-color: linear-gradient(
 		90deg,
@@ -26,9 +26,11 @@ body {
 	--black-color: #000000;
 	--text-color: #37414a;
 	--grey-text: #788693;
-	--input-color: var(--primary-color);
-	--body-color: #ccdbe8;
+	--input-color: #dddddd;
+	--body-color: #ccedbf;
 	--color-bg: #ccdbe8;
+	--card-bg: #f2f2f2;
+	--card-hover: #ffffff;
 }
 
 a {
@@ -65,7 +67,7 @@ li {
 
 .btn {
 	padding: 0.6rem 1.5rem;
-	background: var(--gradient-color);
+	background: var(--primary-color);
 	border-radius: 3rem;
 	border: none;
 	outline: none;

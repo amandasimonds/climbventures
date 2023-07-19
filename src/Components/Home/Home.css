@@ -1,20 +1,3 @@
-:root {
-  --primary-color: #289255;
-  --secondary-color: #935036;
-  --gradient-color: linear-gradient(
-  	90deg,
-  	rgba(114, 153, 181, 1) 0%,
-  	rgba(204, 219, 232, 1) 50%
-  );
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --text-color: #37414a;
-  --grey-text: #788693;
-  --input-color: #dddddd;
-  --body-color: #ccdbe8;
-  --color-bg: #ccdbe8;
-}
-
 .home {
   width: 100%;
   position: relative;
@@ -27,9 +10,11 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  background: rgba(0, 0, 0, 0.4078431373);
   top: 0;
   bottom: 0;
   z-index: 1;
+  mix-blend-mode: hard-light;
 }
 .home video {
   position: absolute;
@@ -111,5 +96,42 @@
   margin-left: 10px;
 }
 .home .card-div .input .input[type=range] {
-  background: blue;
+  background: red;
+}
+.home .card-div .search-options {
+  position: absolute;
+  background: var(--secondary-color);
+  width: -moz-max-content;
+  width: max-content;
+  bottom: -0.7rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+  padding: 5px 0.8rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: center;
+  cursor: pointer;
+}
+.home .card-div .search-options:hover {
+  background: var(--primary-color);
+}
+.home .card-div .search-options .icon {
+  font-size: 18px;
+}
+.home .card-div .search-options span {
+  font-size: 13px;
+}
+.home .home-footer-icons {
+  width: 100%;
+  justify-content: space-between;
+}
+.home .home-footer-icons .icon {
+  font-size: 20px;
+  margin: 0 5px;
+  color: var(--white-color);
+  font-weight: 600;
+}
+.home .home-footer-icons .icon:hover {
+  color: var(--primary-color);
 }/*# sourceMappingURL=Home.css.map */
