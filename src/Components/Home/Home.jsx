@@ -12,6 +12,9 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 const Home = () => {
+	useEffect(() => {
+		Aos.init({duration: 1000})
+	}, [])
 	return (
 		<section className="home">
 			<div className="overlay"></div>
@@ -19,10 +22,10 @@ const Home = () => {
 
 			<div className="home-content container">
 				<div className="text-div">
-					<span className="small-text">Our Packages</span>
-					<h1 className="home-title">Find your adventure</h1>
+					<span data-aos="fade-up" className="small-text" >Our Packages</span>
+					<h1 data-aos="fade-up" className="home-title">Find your adventure</h1>
 				</div>
-				<div className="card-div grid">
+				<div data-aos="fade-up" className="card-div grid">
 					<div className="destination-input">
 						<label htmlFor="city">Search your destination:</label>
 						<div className="input flex">
@@ -54,7 +57,7 @@ const Home = () => {
 						<span>MORE FILTERS</span>
 					</div>
 				</div>
-				<div className="home-footer-icons flex">
+				<div data-aos="fade-up" className="home-footer-icons flex">
 					<div className="right-icons">
 						<AiOutlineFacebook className="icon" />
 						<AiFillInstagram className="icon" />

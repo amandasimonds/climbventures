@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Main.css';
 import mtmoran from '../../Assets/mtmoran.jpg';
 import moab from '../../Assets/moab.jpg';
 import whitefish from '../../Assets/whitefish.jpeg';
 import longspeak from '../../Assets/longspeak.jpg';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import {
 	HiOutlineClipboardCheck,
@@ -122,16 +125,21 @@ const data = [
 ];
 
 const Main = () => {
+
+	useEffect(() => {
+		Aos.init({ duration: 1000 });
+	}, []);
+
 	return (
 		<section className="main container section">
 			<div className="sec-title">
-				<h3 className="title">Most Popular</h3>
+				<h3 data-aos="fade-right" className="title">Most Popular</h3>
 			</div>
 
 			<div className="sec-content grid">
 				{data.map((item) => {
 					return (
-						<div key={item.id} className="expedition">
+						<div data-aos="fade-up" key={item.id} className="expedition">
 							<div className="image-div">
 								<img src={item.imgSrc} alt={item.title} />
 							</div>

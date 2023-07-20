@@ -154,4 +154,79 @@
 
 //media queries
 
+@media screen and (min-width: 500px) {
+	.home {
+		.home-content {
+			.text-div {
+				.small-text {
+					font-size: 16px;
+				}
 
+				.home-title {
+					position: relative;
+					font-size: 2.3rem;
+					width: max-content;
+
+					&::after {
+						position: absolute;
+						content: '';
+						background-color: var(--secondary-color);
+						height: 5px;
+						width: 145px;
+						right: 0px;
+						bottom: 5px;
+						z-index: -1;
+					}
+				}
+			}
+
+			.card-div {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 660px) {
+	.home {
+		.home-content {
+			.card-div {
+				padding: 2rem 1rem;
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 940px) {
+	.home {
+		height: 70vh;
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.home {
+		height: 80vh;
+
+		.home-content {
+			padding-left: 0;
+			padding-right: 0;
+
+			.card-div {
+				padding: 2rem 1rem;
+				grid-template-columns: repeat(3, 1fr);
+				input {
+					// margin-bottom: 1rem;
+				}
+
+				.search-options {
+					bottom: -1rem;
+					padding: 8px 1rem;
+					span {
+						font-size: 17px;
+					}
+				}
+			}
+		}
+	}
+}

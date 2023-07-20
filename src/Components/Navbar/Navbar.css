@@ -78,4 +78,64 @@
 }
 .header .toggle-navbar:hover.icon {
   color: var(--secondary-color);
+}
+
+:root {
+  --primary-color: #289255;
+  --secondary-color: #935036;
+  --gradient-color: linear-gradient(
+  	90deg,
+  	rgba(114, 153, 181, 1) 0%,
+  	rgba(204, 219, 232, 1) 50%
+  );
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --text-color: #37414a;
+  --grey-text: #788693;
+  --input-color: #dddddd;
+  --body-color: #ccedbf;
+  --color-bg: #ccdbe8;
+  --card-bg: #f2f2f2;
+  --card-hover: #ffffff;
+}
+
+@media screen and (min-width: 769px) {
+  .toggle-navbar,
+  .close-navbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .navbar .navlists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .header .navbar .navlists .nav-item .nav-link {
+    color: var(--text-color);
+    padding: 0 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .header .navbar .navlists .nav-item .nav-link:hover {
+    color: var(--primary-color);
+  }
+  .header .navbar .navlists .btn {
+    margin-left: 1rem;
+  }
+  .header .navbar .navlists .btn a {
+    color: var(--white-color);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navbar .navlists .nav-item {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .header {
+    padding: 1rem 8.5rem;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
