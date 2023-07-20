@@ -25,7 +25,7 @@
 	.sec-content {
 		justify-content: center;
 		gap: 1.5rem;
-        margin: 2rem 0;
+		margin: 2rem 0;
 
 		.expedition {
 			height: 100%;
@@ -134,9 +134,26 @@
 
 // media queries
 
-@media screen and (min-width: 740px) {
-	.home{
-		height: 70vh;
+@media screen and (min-width: 500px) {
+	.title {
+		font-size: 1.5rem;
+		&::after {
+			width: 155px !important;
+		}
+	}
+
+	.sec-content {
+		grid-template-columns: repeat(2, 1fr);
+
+		.expedition{
+			height: auto;
+		}
+	}
+}
+
+@media screen and (min-width: 840px) {
+	.sec-content {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 

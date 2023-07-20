@@ -111,8 +111,22 @@
   font-size: 18px;
 }
 
-@media screen and (min-width: 740px) {
-  .home {
-    height: 70vh;
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .sec-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sec-content .expedition {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .sec-content {
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=Main.css.map */
