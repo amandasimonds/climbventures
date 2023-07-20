@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import video from '../../Assets/climbingvideo.mp4';
 import { GrLocation } from 'react-icons/gr';
@@ -7,6 +7,9 @@ import { AiOutlineFacebook, AiFillInstagram } from 'react-icons/ai';
 import { FaTripadvisor } from 'react-icons/fa';
 import { BsListTask } from 'react-icons/bs';
 import { TbApps } from 'react-icons/tb';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
 	return (

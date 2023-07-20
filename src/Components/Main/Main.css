@@ -22,6 +22,7 @@
 .main .sec-content {
   justify-content: center;
   gap: 1.5rem;
+  margin: 2rem 0;
 }
 .main .sec-content .expedition {
   height: 100%;
